@@ -55,6 +55,9 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
+activate :relative_assets
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
