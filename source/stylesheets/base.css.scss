@@ -1,0 +1,51 @@
+@import "normalize";
+@import "landing";
+@import "landingnav";
+@import "about";
+@import "lookbook";
+
+body {
+  text-rendering: GeometricPrecision;
+}
+@font-face {
+  font-family: aglight;
+  src: url(../fonts/aglight.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: agsemi;
+  src: url(../fonts/agsemi.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: agbold;
+  src: url(../fonts/agbold.ttf);
+}
+
+@font-face {
+  font-family: Circular;
+  src: url(../fonts/CircularStd-Book.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: CircularMedium;
+  src: url(../fonts/CircularStd-Medium.otf);
+  font-weight: 400;
+}
+
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.float-right {
+  float: right;
+}
+.text-left {
+  text-align: left;
+}

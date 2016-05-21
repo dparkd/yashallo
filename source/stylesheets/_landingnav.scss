@@ -1,0 +1,49 @@
+@mixin move($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin animation($time) {
+  -webkit-transition: transform 1s cubic-bezier(0, 1, 0.5, 1),opacity 1s ease,top 1s cubic-bezier(0, 1, 0.5, 1);
+  -webkit-transition: opacity 1s ease,top 1s cubic-bezier(0, 1, 0.5, 1),-webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+  transition: opacity 1s ease,top 1s cubic-bezier(0, 1, 0.5, 1),-webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 1s cubic-bezier(0, 1, 0.5, 1),opacity 1s ease,top 1s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 1s cubic-bezier(0, 1, 0.5, 1),opacity 1s ease,top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); 
+}
+
+.nav {
+  width: 90%;
+  position: absolute;
+  z-index: 99;
+  padding-top: 40px;
+  padding-left: 20px;
+  font-family: 'Circular', sans-serif;
+
+  .row {
+    padding: 25px 50px 0 50px;
+    
+    .fa {
+      padding-top: 4px;
+    }
+    
+    a {
+      text-decoration: none;
+      @include animation(0.5);
+      
+      h1 {
+        color: #333;
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        @include animation(1s);
+      }
+
+      &:hover h1{
+        @include move(10px, 0);
+      }
+      &:hover #right {
+        @include move(-10px, 0); 
+      }
+    }
+  }
+}

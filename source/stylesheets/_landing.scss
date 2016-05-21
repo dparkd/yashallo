@@ -1,0 +1,63 @@
+@mixin animation($time) {
+  -webkit-transition: $time all cubic-bezier(0, 1, 0.5, 1);
+  -moz-transition: $time all cubic-bezier(0, 1, 0.5, 1);
+  transition: $time all cubic-bezier(0, 1, 0.5, 1); 
+}
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+}
+@mixin move($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+.header {
+  position: relative;
+  width: 100%; 
+  margin: 0 auto;
+  background: url('../images/bg-main.jpg') no-repeat center top;
+  background-size: cover;
+
+  font-family: 'agsemi', sans-serif;
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 10em;
+    mix-blend-mode: color-dodge;
+  }
+
+  #feature {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    font-family: 'Circular', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 0;
+    letter-spacing: 1px;
+
+    transform: rotate(90deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
