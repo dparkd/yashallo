@@ -31,19 +31,20 @@
     mix-blend-mode: color-dodge;
   }
 
-  #feature {
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    font-family: 'Circular', sans-serif;
-    letter-spacing: 1px;
+  a {
+    position: relative; 
+    bottom: -100px;
+    border: 2px solid white;
+    padding: 15px 50px;
     color: white;
-    font-size: 1.5em;
-    padding-top: 0;
-    letter-spacing: 1px;
+    text-decoration: none;
 
-    transform: rotate(90deg);
+    @include animation(0.2s); 
+
+    &:hover {
+      background: white;
+      color: #333; 
+    }
   }
 }
 

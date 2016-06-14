@@ -17,4 +17,53 @@ $(document).ready(function() {
     $('.about, .about-img').addClass('show');
     $('.about, .about-img').removeClass('hide');
   });
+
+  var sticky_navigation_offset_top = $('.norway .navigation').offset().top;
+  var sticky_navigation = function(){
+    var scroll_top = $(window).scrollTop(); 
+    if (scroll_top > sticky_navigation_offset_top) { 
+      $('.norway .navigation').addClass('fixed');
+    } else {
+      $('.norway .navigation').removeClass('fixed');
+    }   
+  };
+  
+  // run our function on load
+  sticky_navigation();
+  
+  // and run it again every time you scroll
+  $(window).scroll(function() {
+    sticky_navigation();
+  });
+
+  // lazy load images 
+  $(function() {
+    $(".lazy").lazyload();
+  });
+
+
+  jQuery(window).scroll(function(){
+    var scroll_top = jQuery(this).scrollTop(); // get scroll position top
+    var height_element_parent =  jQuery("#spark-white").height(); //get high parent element
+    var height_element = jQuery("#spark-white .product-nav").height(); //get high of elemeneto
+    var position_fixed_max = height_element_parent - height_element; // get the maximum position of the elemen
+    var position_fixed = scroll_top < 100 ? 140 - scroll_top : position_fixed_max > scroll_top ? 40 : position_fixed_max - scroll_top ;
+    jQuery("#spark-white .product-nav").css("top",position_fixed);
 });
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,14 +11,21 @@
   background-size: cover;
   text-align: center;
 
-  img {
+  .title {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-80%);
+    margin: 0 auto;
+    background: white;
     width: 200px;
-    padding-top: 200px;
+    padding: 30px 50px;
   }
 }
 
-.norway-text {
-  padding-top: 75px;
+.norway .introduction {
+  padding-top: 100px;
   min-height: 300px;
   padding-bottom: 0px;
 
@@ -31,25 +38,101 @@
   }
   
   img {
-    width: 50%;
-    padding-top: 50px;
+    width: 100%;
   }
 
   p {
-    padding-top: 50px;
     font-family: 'Circular', sans-serif;
     font-size: 1.3em;
-    width: 80%; 
+    width: 100%; 
     margin: 0 auto;
     color: #7A7A7A;
   }
-}
 
-.daniel {
-  margin: 0 50px;
-  padding-bottom: 125px;
-  img {
-    width: 100%; 
-    margin-bottom: 50px;
+  .link {
+    font-family: 'Circular', sans-serif;
+    color: #333;
   }
 }
+
+.norway .navigation {
+  width: 100%; 
+  margin: 0;
+  border-bottom: 1px solid #f1f1f1;
+  background: white;
+  z-index: 999;
+
+  .row {
+    padding: 20px 50px;
+  }
+
+  a {
+    font-family: 'CircularMedium', sans-serif;
+    color: #333; 
+    padding-right: 20px;
+  }
+}
+.norway .navigation.fixed {
+  position: fixed; 
+  top: 0; 
+}
+
+
+.norway-products {
+  padding-top: 100px;
+  margin-top: 100px;
+  font-family: 'CircularMedium', sans-serif;
+  border-top: 1px solid #f1f1f1;
+
+  h1 {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 100%; 
+    margin-bottom: 25px;
+  }
+  .product-nav {
+    position: fixed; 
+  }
+
+
+  a {
+    background: white;
+    border: 2px solid #333;
+    display: inline-block;
+    height: auto;
+    padding: 5px 50px;
+    color: #333;
+    text-decoration: none;
+
+    @include animation(0.2s); 
+
+    &:hover {
+      background: #333;
+      border-color: #333;
+      color: white; 
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
