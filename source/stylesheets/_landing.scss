@@ -25,10 +25,16 @@
   font-family: 'agsemi', sans-serif;
 
   h1 {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
     font-size: 10em;
     mix-blend-mode: color-dodge;
+  }
+
+  p {
+    color: white;
+    font-family: 'Circular', sans-serif;
+    font-size: 2em;
   }
 
   a {
