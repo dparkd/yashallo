@@ -132,6 +132,25 @@
   }
 }
 
+.item-six {
+  text-align: right;
+  img {
+    width: 100%; 
+  }
+  .columns{
+    position: relative;
+
+    .caption {
+      position: absolute;
+      right: 40px;
+      top: 20px;
+    }
+  }
+  .caption {
+    color: white;
+    opacity: 1;
+  }
+}
 
 
 
