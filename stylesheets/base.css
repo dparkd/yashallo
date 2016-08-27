@@ -1,0 +1,807 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 12, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 151, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 267, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/dpark/code/yashallo/source/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 18, /Users/dpark/code/yashallo/source/stylesheets/_landing.scss */
+.header {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background: url("../images/bg-main.jpg") no-repeat center top;
+  background-size: cover;
+  font-family: 'agsemi', sans-serif; }
+  /* line 27, /Users/dpark/code/yashallo/source/stylesheets/_landing.scss */
+  .header h1 {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 10em;
+    mix-blend-mode: color-dodge; }
+  /* line 34, /Users/dpark/code/yashallo/source/stylesheets/_landing.scss */
+  .header p {
+    color: white;
+    font-family: 'Circular', sans-serif;
+    font-size: 2em; }
+  /* line 40, /Users/dpark/code/yashallo/source/stylesheets/_landing.scss */
+  .header a {
+    position: relative;
+    bottom: -100px;
+    border: 2px solid white;
+    padding: 15px 50px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.2s all cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition: 0.2s all cubic-bezier(0, 1, 0.5, 1);
+    transition: 0.2s all cubic-bezier(0, 1, 0.5, 1); }
+    /* line 50, /Users/dpark/code/yashallo/source/stylesheets/_landing.scss */
+    .header a:hover {
+      background: white;
+      color: #333; }
+
+/* line 15, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+.nav {
+  width: 90%;
+  position: absolute;
+  z-index: 99;
+  padding-top: 40px;
+  padding-left: 20px;
+  font-family: 'Circular', sans-serif; }
+  /* line 23, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+  .nav .row {
+    padding: 25px 50px 0 50px; }
+    /* line 26, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+    .nav .row .fa {
+      padding-top: 4px; }
+    /* line 30, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+    .nav .row a {
+      text-decoration: none;
+      -webkit-transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+      -webkit-transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+      transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+      transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+      transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); }
+      /* line 34, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+      .nav .row a h1 {
+        color: #333;
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        -webkit-transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+        -webkit-transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+        transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+        transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+        transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); }
+      /* line 41, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+      .nav .row a:hover h1 {
+        -webkit-transform: translate(10px, 0);
+        -ms-transform: translate(10px, 0);
+        transform: translate(10px, 0); }
+      /* line 44, /Users/dpark/code/yashallo/source/stylesheets/_landingnav.scss */
+      .nav .row a:hover #right {
+        -webkit-transform: translate(-10px, 0);
+        -ms-transform: translate(-10px, 0);
+        transform: translate(-10px, 0); }
+
+/* line 7, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+.about-header {
+  width: 100%;
+  height: 700px;
+  background: url("../images/about-bg.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center; }
+  /* line 14, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+  .about-header img {
+    width: 200px;
+    padding-top: 200px; }
+
+/* line 20, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+.about-text {
+  padding-top: 75px;
+  min-height: 300px;
+  padding-bottom: 0px; }
+  /* line 25, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+  .about-text h1 {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; }
+  /* line 33, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+  .about-text img {
+    width: 50%;
+    padding-top: 50px; }
+  /* line 38, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+  .about-text p {
+    padding-top: 50px;
+    font-family: 'Circular', sans-serif;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 0 auto;
+    color: #7A7A7A; }
+
+/* line 48, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+.daniel {
+  margin: 0 50px;
+  padding-bottom: 125px; }
+  /* line 51, /Users/dpark/code/yashallo/source/stylesheets/_about.scss */
+  .daniel img {
+    width: 100%;
+    margin-bottom: 50px; }
+
+/* line 15, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.shop-item:hover .caption {
+  -webkit-transform: translate(10px, 0);
+  -ms-transform: translate(10px, 0);
+  transform: translate(10px, 0); }
+
+/* line 19, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.lookbookHeader {
+  position: relative;
+  height: 900px;
+  background: url("../images/lookbook/bg.jpg") no-repeat center top;
+  background-size: cover; }
+  /* line 25, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .lookbookHeader .caption {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    color: white;
+    opacity: 1;
+    font-size: 1.2em;
+    font-family: 'CircularMedium', sans-serif;
+    text-decoration: none;
+    -webkit-transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+    -webkit-transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); }
+    /* line 39, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    .lookbookHeader .caption:hover {
+      -webkit-transform: translate(10px, 0);
+      -ms-transform: translate(10px, 0);
+      transform: translate(10px, 0); }
+
+/* line 45, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.lookbookItem {
+  position: relative;
+  min-height: 200px;
+  margin: 50px; }
+  /* line 50, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .lookbookItem .caption {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    color: white;
+    opacity: 0.8;
+    font-size: 1.2em;
+    font-family: 'CircularMedium', sans-serif;
+    text-decoration: none;
+    -webkit-transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+    -webkit-transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
+    transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); }
+    /* line 64, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    .lookbookItem .caption:hover {
+      -webkit-transform: translate(10px, 0);
+      -ms-transform: translate(10px, 0);
+      transform: translate(10px, 0); }
+
+/* line 72, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-one img {
+  width: 30%; }
+/* line 75, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-one .caption {
+  left: 40px;
+  color: white;
+  opacity: 1; }
+
+/* line 83, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-two img {
+  width: 100%; }
+/* line 86, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-two .caption {
+  top: 40px;
+  left: 40px;
+  color: #333;
+  opacity: 1; }
+
+/* line 94, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-three {
+  text-align: right; }
+  /* line 96, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-three img {
+    width: 30%; }
+  /* line 99, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-three .caption {
+    color: white;
+    opacity: 1; }
+
+/* line 105, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-four {
+  text-align: right; }
+  /* line 107, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-four img {
+    width: 100%; }
+  /* line 110, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-four .columns {
+    position: relative; }
+    /* line 113, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    .item-four .columns .caption {
+      position: absolute;
+      right: 40px; }
+  /* line 118, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-four .caption {
+    color: white;
+    opacity: 1; }
+
+/* line 125, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-five img {
+  width: 100%; }
+/* line 129, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-five .caption {
+  color: white;
+  opacity: 1; }
+
+/* line 135, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.item-six {
+  text-align: right; }
+  /* line 137, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-six img {
+    width: 100%; }
+  /* line 140, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-six .columns {
+    position: relative; }
+    /* line 143, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    .item-six .columns .caption {
+      position: absolute;
+      right: 40px;
+      top: 20px; }
+  /* line 149, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .item-six .caption {
+    color: white;
+    opacity: 1; }
+
+/* line 7, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.norway-header {
+  width: 100%;
+  height: 700px;
+  background: url("../images/norwaybg.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center; }
+  /* line 14, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway-header .title {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-80%);
+    margin: 0 auto;
+    background: white;
+    width: 200px;
+    padding: 30px 50px; }
+
+/* line 27, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.norway .introduction {
+  padding-top: 100px;
+  min-height: 300px;
+  padding-bottom: 0px; }
+  /* line 32, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .introduction h1 {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; }
+  /* line 40, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .introduction img {
+    width: 100%; }
+  /* line 44, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .introduction p {
+    font-family: 'Circular', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    margin: 0 auto;
+    color: #7A7A7A; }
+  /* line 52, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .introduction .link {
+    font-family: 'Circular', sans-serif;
+    color: #333; }
+
+/* line 58, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.norway .navigation {
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #f1f1f1;
+  background: white;
+  z-index: 999; }
+  /* line 65, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .navigation .row {
+    padding: 20px 50px; }
+  /* line 69, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .navigation a {
+    font-family: 'CircularMedium', sans-serif;
+    color: #333;
+    padding-right: 20px; }
+
+/* line 75, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.norway .navigation.fixed {
+  position: fixed;
+  top: 0; }
+
+/* line 81, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.norway-products {
+  padding-top: 100px;
+  margin-top: 70px;
+  font-family: 'CircularMedium', sans-serif;
+  border-top: 1px solid #f1f1f1; }
+  /* line 87, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway-products h1 {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; }
+  /* line 95, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway-products img {
+    width: 100%;
+    margin-bottom: 25px; }
+  /* line 103, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway-products a {
+    background: white;
+    border: 2px solid #333;
+    display: inline-block;
+    height: auto;
+    padding: 5px 50px;
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: 0.2s all cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition: 0.2s all cubic-bezier(0, 1, 0.5, 1);
+    transition: 0.2s all cubic-bezier(0, 1, 0.5, 1); }
+    /* line 114, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+    .norway-products a:hover {
+      background: #333;
+      border-color: #333;
+      color: white; }
+
+/* line 122, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.interview {
+  padding-top: 75px;
+  border-top: 1px solid #f1f1f1;
+  margin-top: 50px;
+  font-family: 'Circular', sans-serif; }
+  /* line 127, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .interview h1 {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; }
+  /* line 134, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .interview h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin-top: 50px; }
+  /* line 140, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .interview p {
+    color: #555;
+    text-align: justify; }
+  /* line 145, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .interview img {
+    width: 100%; }
+
+/* line 150, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+.norway .contribute {
+  border-top: 1px solid #f1f1f1;
+  margin-top: 50px;
+  padding-top: 100px;
+  min-height: 300px;
+  margin-bottom: 150px; }
+  /* line 157, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .contribute h1 {
+    font-family: 'CircularMedium', sans-serif;
+    font-size: 2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; }
+  /* line 165, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .contribute img {
+    width: 100%; }
+  /* line 169, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .contribute p {
+    font-family: 'Circular', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    margin: 0 auto;
+    color: #7A7A7A; }
+  /* line 177, /Users/dpark/code/yashallo/source/stylesheets/_norway.scss */
+  .norway .contribute .link {
+    font-family: 'Circular', sans-serif;
+    color: #333; }
+
+/* line 8, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+body {
+  text-rendering: GeometricPrecision; }
+
+@font-face {
+  font-family: aglight;
+  src: url(../fonts/aglight.ttf);
+  font-weight: 300; }
+@font-face {
+  font-family: agsemi;
+  src: url(../fonts/agsemi.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: agbold;
+  src: url(../fonts/agbold.ttf); }
+@font-face {
+  font-family: Circular;
+  src: url(../fonts/CircularStd-Book.otf);
+  font-weight: 300; }
+@font-face {
+  font-family: CircularMedium;
+  src: url(../fonts/CircularStd-Medium.otf);
+  font-weight: 400; }
+/* line 40, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+.ext-link {
+  color: #333; }
+
+/* line 45, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+.text-center {
+  text-align: center; }
+
+/* line 48, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+.text-right {
+  text-align: right; }
+
+/* line 51, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+.float-right {
+  float: right; }
+
+/* line 54, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+.text-left {
+  text-align: left; }
