@@ -481,9 +481,23 @@ table {
 .lookbookHeader {
   position: relative;
   height: 900px;
-  background: url("../images/lookbook/bg.jpg") no-repeat center top;
-  background-size: cover; }
-  /* line 25, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  background-size: cover;
+  text-align: center; }
+  /* line 26, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .lookbookHeader .layer {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%; }
+  /* line 33, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .lookbookHeader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    margin: 0 auto; }
+  /* line 42, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .lookbookHeader .caption {
     position: absolute;
     bottom: 30px;
@@ -498,18 +512,34 @@ table {
     transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
     transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
     transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); }
-    /* line 39, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    /* line 56, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
     .lookbookHeader .caption:hover {
       -webkit-transform: translate(10px, 0);
       -ms-transform: translate(10px, 0);
       transform: translate(10px, 0); }
 
-/* line 45, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 62, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+.introduction {
+  font-family: "Maison", sans-serif;
+  text-align: center;
+  padding-top: 300px; }
+  /* line 67, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .introduction img {
+    width: 200px; }
+  /* line 71, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  .introduction p {
+    padding-top: 250px;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 30px; }
+
+/* line 79, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .lookbookItem {
   position: relative;
   min-height: 200px;
-  margin: 50px; }
-  /* line 50, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  margin: 50px;
+  margin-bottom: 200px; }
+  /* line 85, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .lookbookItem .caption {
     position: absolute;
     bottom: 30px;
@@ -524,83 +554,83 @@ table {
     transition: opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 1s cubic-bezier(0, 1, 0.5, 1);
     transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1);
     transition: transform 1s cubic-bezier(0, 1, 0.5, 1), opacity 1s ease, top 1s cubic-bezier(0, 1, 0.5, 1), webkit-transform 1s cubic-bezier(0, 1, 0.5, 1); }
-    /* line 64, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    /* line 99, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
     .lookbookItem .caption:hover {
       -webkit-transform: translate(10px, 0);
       -ms-transform: translate(10px, 0);
       transform: translate(10px, 0); }
 
-/* line 72, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 107, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-one img {
   width: 30%; }
-/* line 75, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 110, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-one .caption {
   left: 40px;
   color: white;
   opacity: 1; }
 
-/* line 83, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 118, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-two img {
   width: 100%; }
-/* line 86, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 121, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-two .caption {
   top: 40px;
   left: 40px;
   color: #333;
   opacity: 1; }
 
-/* line 94, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 129, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-three {
   text-align: right; }
-  /* line 96, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 131, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-three img {
     width: 30%; }
-  /* line 99, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 134, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-three .caption {
     color: white;
     opacity: 1; }
 
-/* line 105, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 140, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-four {
   text-align: right; }
-  /* line 107, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 142, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-four img {
     width: 100%; }
-  /* line 110, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 145, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-four .columns {
     position: relative; }
-    /* line 113, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    /* line 148, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
     .item-four .columns .caption {
       position: absolute;
       right: 40px; }
-  /* line 118, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 153, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-four .caption {
     color: white;
     opacity: 1; }
 
-/* line 125, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 160, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-five img {
   width: 100%; }
-/* line 129, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 164, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-five .caption {
   color: white;
   opacity: 1; }
 
-/* line 135, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+/* line 170, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
 .item-six {
   text-align: right; }
-  /* line 137, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 172, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-six img {
     width: 100%; }
-  /* line 140, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 175, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-six .columns {
     position: relative; }
-    /* line 143, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+    /* line 178, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
     .item-six .columns .caption {
       position: absolute;
       right: 40px;
       top: 20px; }
-  /* line 149, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
+  /* line 184, /Users/dpark/code/yashallo/source/stylesheets/_lookbook.scss */
   .item-six .caption {
     color: white;
     opacity: 1; }
@@ -786,22 +816,30 @@ body {
   font-family: CircularMedium;
   src: url(../fonts/CircularStd-Medium.otf);
   font-weight: 400; }
-/* line 40, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+@font-face {
+  font-family: Maison;
+  src: url(../fonts/MaisonNeueWEB-Light.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: MaisonBold;
+  src: url(../fonts/MaisonNeueWEB-Bold.woff);
+  font-weight: 400; }
+/* line 52, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
 .ext-link {
   color: #333; }
 
-/* line 45, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+/* line 57, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
 .text-center {
   text-align: center; }
 
-/* line 48, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+/* line 60, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
 .text-right {
   text-align: right; }
 
-/* line 51, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+/* line 63, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
 .float-right {
   float: right; }
 
-/* line 54, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
+/* line 66, /Users/dpark/code/yashallo/source/stylesheets/base.css.scss */
 .text-left {
   text-align: left; }
